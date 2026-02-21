@@ -35,7 +35,7 @@ const Hero = () => {
                    <input type="date" id="return-date" required className='text-sm text-gray-500'/> 
                 </div>
                 <button className='flex items-center justify-center gap-2 px-9 py-3 max-sm:mt-4 bg-primary hover:bg-accent text-white hover:text-black rounded-full cursor-pointer group'>
-                    <img src={assets.search_icon} alt="search" className='brightness-300 group-hover:brightness-0'/>
+                    <img src={assets.search_icon} alt="search" className='brightness-400 group-hover:brightness-0'/>
                     Search
                 </button>
         </form>
