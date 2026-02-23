@@ -23,14 +23,15 @@ const FeaturedSection = () => {
                         <CarCard car={car} />
                     </div>
                 ))
-            }
-            <button onClick={() => { navigate('/cars'); scrollTo(0,0) 
-            }} 
-            className="mt-8 flex items-center justify-center gap-2
-            border border-borderColor text-white px-6 py-3 rounded-lg hover:bg-gray-50 transition duration-300 rounded-md mt-18 cursor-pointer">
-                Explore All Cars <img src={assets.arrowIcon} alt="arrow" />
-            </button>
+            }           
         </div>
+
+         <button onClick={() => { navigate('/cars'); scrollTo(0,0) 
+            }} 
+            className="flex items-center justify-center gap-2 px-6 py-2 border
+            border-borderColor cursor-pointer hover:bg-gray-50 rounded-md mt-18">
+            View All Cars <img src={assets.arrow_icon} alt="arrow" />
+            </button>
       </div>
     </div>
   )
