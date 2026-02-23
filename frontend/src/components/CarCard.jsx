@@ -1,4 +1,7 @@
 import React from 'react'
+import { assets } from '../assets/assets';
+import { useNavigate } from 'react-router-dom';
+import { dummyCarData } from '../assets/assets';
 
 const CarCard = ({car}) => {
 
@@ -16,8 +19,8 @@ const CarCard = ({car}) => {
 
           <div className='absolute bottom-2 right-2 bg-blue-500
            text-white px-2 py-1 rounded-full'>
-           <span className='font-semibold'>{currency}{car.price}/day</span>
-           <span className='text-sm text-white/80'> / day</span> 
+           <span className='font-semibold'>{currency}{car.pricePerDay}</span>
+            <span className='text-sm text-white/80'> / day</span> 
           </div>
 
       </div>
