@@ -1,12 +1,15 @@
 import React from 'react'
 import { assets } from '../assets/assets';
 import { useNavigate } from 'react-router-dom';
-import { dummyCarData } from '../assets/assets';
 
 const CarCard = ({car}) => {
 
     const currency = import.meta.env.VITE_CURRENCY
+    const navigate = useNavigate()
+
   return (
+    <div onClick={() => navigate(`/car-details/${car._id}`)} className='group rounded-xl overflow-hidden shadow-lg hover:-translate-y-1 cursor-pointer 
+    bg-white transition-all duration-300 cursor-pointer'>
     <div className='group rounded-xl overflow-hidden shadow-lg hover:-translate-y-1 cursor-pointer 
     bg-white transition-all duration-300 cursor-pointer'>
       
@@ -51,6 +54,7 @@ const CarCard = ({car}) => {
               </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }
